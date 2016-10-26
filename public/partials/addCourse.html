@@ -1,0 +1,30 @@
+<div class="col-xs-8 col-xs-offset-2" ng-controller="searchController">
+	<h3 class="text-center">Add Course Page</h3>
+	<form class="form-horizontal">
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="form-group">
+			  <label class="control-label" type="text">Enter title</label>
+			  <input class="form-control" type="text" ng-model="course.title">
+			</div>
+			<div class="form-group">
+			  <label class="control-label" type="text">Enter department</label>
+			  <input class="form-control" type="text" ng-model="course.dept">
+			</div>
+			<div class="form-group">
+			  <label class="control-label" for="focusedInput">Enter Course Number</label>
+			  <input style="width: 40%" class="form-control" type="number" ng-model="course.number">
+			</div>
+			<div class="form-group">
+			  <label class="control-label" for="focusedInput">Enter Course Description</label>
+			  <textarea class="form-control" rows="3" type="text" ng-model="course.description"></textarea>
+			</div>
+			<div class="form-group">
+			  <label class="control-label" for="focusedInput">Enter Course Rank</label>
+			  <input style="width: 40%" class="form-control" type="number" ng-model="course.rank">
+			</div>
+			<div class="form-group">
+				<a class="btn btn-primary" ng-click="addCourse(course)">Submit Class</a>
+			</div>
+		</div>
+	</form>
+</div>

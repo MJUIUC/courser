@@ -1,0 +1,40 @@
+<html ng-app="courser">
+  <head>
+    <title>Courser</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/userForms.css">
+    <link rel="stylesheet" href="stylesheets/navBar.css">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,700,900,500,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  
+  <!--Navigation Bar-->
+  <nav-bar></nav-bar>
+
+  <body>
+    <!--Rest of the application-->
+    <ng-view></ng-view>
+  </body>
+
+  <!--Base Construction plugins-->
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
+  <script src="javascripts/siteRoute.js"></script>
+
+  <!--Site Factories/Services-->
+  <script src="javascripts/factories/accountFactory.js"></script>
+  <script src="javascripts/factories/searchFactory.js"></script>
+
+  <!--Site Controllers-->
+  <script src="javascripts/controllers/accountController.js"></script>
+  <script src="javascripts/controllers/searchController.js"></script>
+  <script src="javascripts/controllers/resultsController.js"></script>
+
+
+</html>

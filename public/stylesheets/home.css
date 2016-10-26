@@ -1,0 +1,60 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+
+#textpanel {
+	padding: 0px;
+	margin-top: -21px;
+	margin-bottom: -21px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	background-color: #B3E5F3;
+	font-size: 200px;
+	height: 300px;
+	min-width: 100%;
+}
+
+#textpanel h1 {
+	padding-top: 9%;
+	font-size: 30%;
+}
+
+input, input[placeholder] {
+	text-align: center;
+}
+
+@media (min-width: 635px) and (max-width: 768px) {
+
+	#searchbox {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+}
+
+@media (max-width: 634px) {
+
+	#searchbox {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	#textpanel h1 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+
+/* This is for the different screen sizes */
+
+
+
+/* The picture becomes responsive at 1145px */

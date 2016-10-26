@@ -1,0 +1,182 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'node-gyp',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'node-gyp', null ]
+7 verbose cache add spec node-gyp
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'node-gyp',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'node-gyp',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed node-gyp@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for node-gyp
+11 info addNameTag [ 'node-gyp', 'latest' ]
+12 silly mapToRegistry name node-gyp
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'node-gyp',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'node-gyp',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/node-gyp
+17 verbose addNameTag registry:https://registry.npmjs.org/node-gyp not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/node-gyp
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 4:26:21 AM
+21 verbose request id ad521a8810c7f079
+22 verbose etag "EDS4I320N6106LOHFT0YLE53P"
+23 http request GET https://registry.npmjs.org/node-gyp
+24 http 304 https://registry.npmjs.org/node-gyp
+25 verbose headers { date: 'Sun, 04 Sep 2016 09:26:21 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"EDS4I320N6106LOHFT0YLE53P"',
+25 verbose headers   age: '161',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ord1738-ORD',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1472981181.584286,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Sun, 04 Sep 2016 09:26:21 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"EDS4I320N6106LOHFT0YLE53P"',
+26 silly get     age: '161',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ord1738-ORD',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1472981181.584286,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/node-gyp from cache
+28 verbose get saving node-gyp to /Users/macuser/.npm/registry.npmjs.org/node-gyp/.cache.json
+29 verbose correctMkdir /Users/macuser/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for node-gyp with tag latest
+31 silly addNamed node-gyp@3.4.0
+32 verbose addNamed "3.4.0" is a plain semver version for node-gyp
+33 silly cache afterAdd node-gyp@3.4.0
+34 verbose afterAdd /Users/macuser/.npm/node-gyp/3.4.0/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/macuser/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/macuser/.npm/node-gyp/3.4.0/package/package.json written
+37 silly install resolved [ { name: 'node-gyp',
+37 silly install resolved     description: 'Node.js native addon build tool',
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     keywords: [ 'native', 'addon', 'module', 'c', 'c++', 'bindings', 'gyp' ],
+37 silly install resolved     version: '3.4.0',
+37 silly install resolved     installVersion: 9,
+37 silly install resolved     author:
+37 silly install resolved      { name: 'Nathan Rajlich',
+37 silly install resolved        email: 'nathan@tootallnate.net',
+37 silly install resolved        url: 'http://tootallnate.net' },
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/node-gyp.git' },
+37 silly install resolved     preferGlobal: true,
+37 silly install resolved     bin: { 'node-gyp': './bin/node-gyp.js' },
+37 silly install resolved     main: './lib/node-gyp.js',
+37 silly install resolved     dependencies:
+37 silly install resolved      { fstream: '^1.0.0',
+37 silly install resolved        glob: '^7.0.3',
+37 silly install resolved        'graceful-fs': '^4.1.2',
+37 silly install resolved        minimatch: '^3.0.2',
+37 silly install resolved        mkdirp: '^0.5.0',
+37 silly install resolved        nopt: '2 || 3',
+37 silly install resolved        npmlog: '0 || 1 || 2 || 3',
+37 silly install resolved        osenv: '0',
+37 silly install resolved        'path-array': '^1.0.0',
+37 silly install resolved        request: '2',
+37 silly install resolved        rimraf: '2',
+37 silly install resolved        semver: '2.x || 3.x || 4 || 5',
+37 silly install resolved        tar: '^2.0.0',
+37 silly install resolved        which: '1' },
+37 silly install resolved     engines: { node: '>= 0.8.0' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { tape: '~4.2.0',
+37 silly install resolved        bindings: '~1.2.1',
+37 silly install resolved        nan: '^2.0.0',
+37 silly install resolved        'require-inject': '~1.3.0' },
+37 silly install resolved     scripts: { test: 'tape test/test-*' },
+37 silly install resolved     gitHead: 'd460084b241c427655497a1de4ed351a13ffb47f',
+37 silly install resolved     bugs: { url: 'https://github.com/nodejs/node-gyp/issues' },
+37 silly install resolved     homepage: 'https://github.com/nodejs/node-gyp#readme',
+37 silly install resolved     _id: 'node-gyp@3.4.0',
+37 silly install resolved     _shasum: 'dda558393b3ecbbe24c9e6b8703c71194c63fa36',
+37 silly install resolved     _from: 'node-gyp@latest',
+37 silly install resolved     _npmVersion: '3.9.3',
+37 silly install resolved     _nodeVersion: '6.2.1',
+37 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+37 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'dda558393b3ecbbe24c9e6b8703c71194c63fa36',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/node-gyp/-/node-gyp-3.4.0.tgz' },
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/node-gyp-3.4.0.tgz_1467079381888_0.1804589256644249' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/node-gyp/-/node-gyp-3.4.0.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install node-gyp@3.4.0 into /usr/local/lib
+39 info installOne node-gyp@3.4.0
+40 verbose installOne of node-gyp to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/macuser/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/macuser/.npm/_locks/node-gyp-7153cdcb940d3c17.lock for /usr/local/lib/node_modules/node-gyp
+43 silly install write writing node-gyp 3.4.0 to /usr/local/lib/node_modules/node-gyp
+44 verbose unbuild lib/node_modules/node-gyp
+45 silly gentlyRm /usr/local/lib/node_modules/node-gyp is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-gyp
+47 verbose tar unpack /Users/macuser/.npm/node-gyp/3.4.0/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/node-gyp
+49 silly gentlyRm /usr/local/lib/node_modules/node-gyp is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-gyp
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/macuser/.npm/node-gyp/3.4.0/package.tgz
+53 verbose unlock done using /Users/macuser/.npm/_locks/node-gyp-7153cdcb940d3c17.lock for /usr/local/lib/node_modules/node-gyp
+54 verbose fstream_path /usr/local/lib/node_modules/node-gyp
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-gyp'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/macuser/site/courser
+60 error Darwin 15.5.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "node-gyp" "--save"
+62 error node v4.4.5
+63 error npm  v2.15.5
+64 error path /usr/local/lib/node_modules/node-gyp
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-gyp'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-gyp']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/node-gyp',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/node-gyp',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/node-gyp
+72 silly gentlyRm /usr/local/lib/node_modules/node-gyp is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-gyp

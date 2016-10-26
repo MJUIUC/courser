@@ -1,0 +1,47 @@
+
+<div id="signUpBox" class="container col-xs-8 col-xs-offset-2">
+  <h3 class="text-center"> Create an Account </h3>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="text" class="form-control" required="true" placeholder="First Name" ng-model="user.first">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="text" class="form-control" required="true" placeholder="Last Name" ng-model="user.last">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="email" class="form-control" id="inputEmail3" required="true" placeholder="Email" ng-model="user.username">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="password" class="form-control" id="inputPassword3" required="true" placeholder="Password" ng-model="user.password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2">
+          <input type="password" class="form-control" id="inputPassword4" required="true" placeholder="Confirm Password" ng-model="user.confirm">
+        </div>
+      </div>
+      <div class="form-group">
+          <div class="col-xs-8 col-xs-offset-2">
+            <div id="yearSelect" class="text-center"> Year In School </div>
+            <select class="form-control">
+              <option>Freshman</option>
+              <option>Sophomore</option>
+              <option>Junior</option>
+              <option>Senior</option>
+            </select>
+          </div>
+        </div>
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-2" align="center">
+          <button type="submit" class="btn btn-primary" ng-click="signUp(user)"> Submit </button>
+        </div>
+      </div>
+    </form>
+</div>

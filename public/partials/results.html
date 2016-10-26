@@ -1,0 +1,10 @@
+<!--This is the results page-->
+<div class="col-xs-8" ng-controller="resultsController" ng-init="getResults()">
+	<h3>Here's what we found</h3>
+	<div class="row">
+		<!--Need to put something here to push info to the results page-->
+		<div class="col-xs-8 col-" ng-repeat="course in searchResults">
+			{{course.courseCode}}:  {{course.name}}
+		</div>
+	</div>
+</div>

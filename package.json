@@ -1,0 +1,37 @@
+{
+  "name": "courser",
+  "description": "website pet project",
+  "version": "1.0.0",
+  "repository": "https://mjeffe6@bitbucket.org/mjeffe6/courser.git",
+  "author": {
+    "name": "Marcus Jefferson",
+    "email": "mjeffe6@illinois.edu"
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.6",
+    "bson": "^0.5.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongostore": "^0.1.4",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "favicon": "0.0.2",
+    "mongodb": "^2.2.9",
+    "mongoose": "^4.5.3",
+    "multer": "^1.1.0",
+    "node-gyp": "^3.4.0",
+    "nodemon": "^1.9.2",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0",
+    "xml2js": "^0.4.17",
+    "xml2json": "^0.10.0"
+  }
+}

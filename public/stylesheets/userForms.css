@@ -1,0 +1,19 @@
+#signUpBox #logInBox {
+	font-family: 'Exo 2', sans-serif;
+}
+
+#yearSelect {
+	margin: 10px;
+}
+
+
+#logInBox {
+	padding: 50px;	
+}
+
+@media (max-width: 479px) {
+
+	#signUpBox #logInBox {
+		width: 80%
+		margin: auto;
+}

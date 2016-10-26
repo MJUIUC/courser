@@ -1,0 +1,26 @@
+#navBar {
+	border-radius: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+/* For the large-sized devices */
+
+@media (min-width: 768px) {
+  .navbar.navbar-default .navbar-nav > li:after {
+   	content: "";
+    border-right: 1px solid #777;
+    position: absolute;
+    height: 50%;
+    right: 0;
+    top: 25%;
+  }
+
+  .navbar.navbar-default .navbar-nav > li:second-child:after {
+  	border: none;
+  }
+
+  .navbar.navbar-default .navbar-nav > li:last-child:after {
+    border: none;
+  }
+}
