@@ -25,7 +25,7 @@ function getPath(){
 	return path;
 };
 
-setPath('/cisapp/explorer/schedule/2016/fall/CS.xml');
+setPath('/cisapp/explorer/schedule/2016/fall/ECE.xml');
 
 router.get('/crawl', function(req,res){
 
@@ -85,7 +85,7 @@ router.get('/crawl', function(req,res){
 							var description = x.description;
 							var hours = x.creditHours
 							var preReq = x.courseSectionInformation
-							console.log(name+" "+courseCode+" "+description);
+							//console.log(name+" "+courseCode+" "+description);
 
 							//	DONT FORGET TO CHANGE THE NAME OF THE CLASS
 
@@ -97,14 +97,14 @@ router.get('/crawl', function(req,res){
 									console.log("added");
 									var newCourse = courseMod({
 											name : name,
-											department : 'CS',
+											department : 'ECE',
 											courseCode : courseCode,
 											userRank : 0,
 											hours	: hours,
 											preReq	: preReq,
 											description : description
 									});
-									//newCourse.save();								
+									newCourse.save();								
 								}
 							});
 

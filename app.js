@@ -30,13 +30,14 @@ require(__dirname + '/api/xmlConvert/convert.js');
 app.use(cookieParser());
 app.use(bodyParser.json());
 
+
 //	set up passport
 app.use(session({ 
-	secret: 'courserisgreatbro',
-	store: new MongoStore({mongooseConnection:mongoose.connection}) 
+	secret: 'courserisgreatbro'
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 
 //	require the api modules
@@ -77,7 +78,7 @@ app.use(function(req,res,next){
 });
 
 //	listen on the local host port
-app.listen(8080);
+app.listen(3000);
 console.log("server is running");
 
 //	push the app out
