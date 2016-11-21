@@ -25,6 +25,9 @@ var app = angular.module('courser',['ngRoute']);
 		.when('/addCourse',{
 				templateUrl:'/partials/addCourse.html'
 			})
+		.when('/course',{
+				templateUrl:'/partials/course.html'
+			})
 		.otherwise({
 				template:"No page here..."
 			});

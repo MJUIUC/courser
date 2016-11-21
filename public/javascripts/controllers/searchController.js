@@ -11,11 +11,19 @@ app.controller('searchController', function($scope,$http,$location,searchFactory
 	// },function(response){
 	// 	console.log(response);
 	// });
+	$scope.setQuereyEnter = function($event, querey){
+		var keyCode = $event.which || $event.keyCode;
+		if(keyCode == 13 && querey != null){
+			$scope.setQuerey(querey);
+		}
+	}
 
 	$scope.setQuerey = function(querey){
-		console.log("setting querey: " + querey);
-		searchFactory.setQuerey(querey);
-		$location.path('/resultsPage');
+		if(querey != null){
+			console.log("setting querey: " + querey);
+			searchFactory.setQuerey(querey);
+			$location.path('/resultsPage');
+		}
 	};
 	
 	$scope.addCourse = function(course){
