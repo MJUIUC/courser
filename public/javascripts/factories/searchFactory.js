@@ -4,6 +4,7 @@ app.factory('searchFactory',function($http,$q){
 	var searchFac = {};
 	var searchResults = [];
 	var searchQuerey = {};
+	var selectedCourse = {};
 
 	searchFac.search = function(querey){
 		var defer = $q.defer();
@@ -18,20 +19,27 @@ app.factory('searchFactory',function($http,$q){
 				defer.reject(response);
 			});
 			return defer.promise;		
-		};
+	};
 
-		searchFac.getSearchResults = function(){
-			return searchResults;
-		};
+	searchFac.getSearchResults = function(){
+		return searchResults;
+	};
 
-		searchFac.setQuerey = function(querey){
-			searchQuerey = {text: querey.text};
-		};
-		searchFac.getQuerey = function(){
-			return searchQuerey;
-		};
+	searchFac.setQuerey = function(querey){
+		searchQuerey = {text: querey.text};
+	};
+	searchFac.getQuerey = function(){
+		return searchQuerey;
+	};
+	//	store current course to be put on course specific page
+	searchFac.setCurrentCourse = function(curCourse){
+		selectedCourse = curCourse;
+	};
+	searchFac.getCurrentCourse = function(){
+		return selectedCourse;
+	};
 
-		searchFac.addCourse = function(course){
+	searchFac.addCourse = function(course){
 			var defer = $q.defer();
 			$http.post('/search/addCourse', course).then(function(response){
 				console.log("course added successfully");
@@ -42,6 +50,6 @@ app.factory('searchFactory',function($http,$q){
 				defer.reject(response);
 			});
 			return defer.promise;
-		};
+	};
 	return searchFac;
 });

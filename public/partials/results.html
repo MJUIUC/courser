@@ -3,7 +3,7 @@
 	<h3>Here's what we found</h3>
 	<div class="row">
 		<div class="col-xs-8 col-" ng-repeat="course in searchResults">
-			<a href="/course">{{course.name}}</a>
+			<a href="/course" ng-click="curCourse(course)">{{course.courseCode}}: {{course.name}}</a>
 		</div>
 	</div>
 </div>

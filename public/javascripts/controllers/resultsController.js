@@ -11,4 +11,7 @@ app.controller('resultsController', function($scope, searchFactory){
 		});
 
 	};
+	$scope.curCourse = function(course){
+		searchFactory.setCurrentCourse(course);
+	}
 });

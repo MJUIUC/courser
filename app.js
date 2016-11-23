@@ -44,10 +44,12 @@ app.use(passport.session());
 var accountHandeler = require(__dirname + '/api/accountApi.js');
 var searchHandeler = require(__dirname + '/api/searchCourseApi.js');
 var xmlJsonConvert = require(__dirname + '/api/xmlConvert/convert.js');
+var outBound = require(__dirname + '/api/outBound.js');
 //	use the api
 app.use('/accounts',accountHandeler);
 app.use('/search',searchHandeler);
 app.use('/xmlConvert', xmlJsonConvert);
+app.use('/pingWiki',outBound);
 
 
 //	set up app to use the whole courser folder inside courser
