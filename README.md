@@ -15,4 +15,4 @@
 
 
 ##current progress as of 9/3/2016
--	The database has been moved from local to mlab (https://mlab.com/home). All ECE courses are in the online db currently. Next, we should work on the results page and the individual course pages. Search needs to be implemented again, and we should figure out comment structure and some other user type things. Most of everything else from here out should be front end.
+-	The database has been moved from local to mlab (https://mlab.com/home). All ECE and CS courses are in the online db currently. Next, we should work on the results page and the individual course pages. Search needs to be implemented again, and we should figure out comment structure and some other user type things. Most of everything else from here out should be front end.
