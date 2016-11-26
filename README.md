@@ -6,7 +6,8 @@
 ##installation
 
 -	To get this project to run locally, you must install *Nodejs*
--	Once that's done, take your terminall to the path of this project and enter the command "npm install" to install the dependancies. After which, you must start mongodb and direct it to /data/db. Then set mongo to "use courser" as the database.
+-	Once that's done, take your terminall to the path of this project and enter the command "npm install" to install the dependancies.
+-	To run the server, in the terminal type the command "node app" and then...
 -	Type localhost:3000 into your browser to view the site.
 
 
