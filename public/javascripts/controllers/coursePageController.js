@@ -5,5 +5,9 @@ app.controller('coursePageController', function($scope, searchFactory, coursePag
 	$scope.course = searchFactory.getCurrentCourse();
 	var origQuerey = searchFactory.getQuerey();
 
-	coursePageFactory.wikiSearch(origQuerey);
+	var wiki = coursePageFactory.wikiSearch(origQuerey);
+
+	//var wikipage = wiki.$$state.value.data.query.pages;
+	//console.log(wiki);
+	//console.log(wiki);
 });

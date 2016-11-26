@@ -12,7 +12,6 @@
 
 ##contributers
 -	Marcus Jefferson
--	Harsh Modhera
 
 
 ##current progress as of 9/3/2016
