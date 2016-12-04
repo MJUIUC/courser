@@ -1,9 +1,19 @@
 <!--This is the results page-->
 <div class="col-xs-8" ng-controller="resultsController" ng-init="getResults()">
-	<h3>Here's what we found</h3>
+	<h3>Search Results</h3>
+	Change the number of results. Default is 10
+	<select ng-model="size">
+	  <option value="10">10</option>
+	  <option value="20">20</option>
+	  <option value="30">30</option>
+	  <option value="40">40</option>
+	  <option value="">all (There might be a ton)</option>
+	</select>
+	
 	<div class="row">
-		<div class="col-xs-8 col-" ng-repeat="course in searchResults">
-			<a href="/course" ng-click="curCourse(course)">{{course.courseCode}}: {{course.name}}</a>
+		<h2 class="col-xs-8" ng-show="noResults">No Results for this query</h2>
+		<div class="col-xs-8" ng-hide="noResults" ng-repeat="course in searchResults | limitTo : size">
+			<h2><a href="/course" ng-click="curCourse(course)">{{course.courseCode}}: {{course.name}}</a></h2>
 		</div>
 	</div>
 </div>

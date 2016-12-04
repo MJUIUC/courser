@@ -10,7 +10,7 @@ router.post('/searchCourses', function(req,res){
 	//	the req should be the search querey
 	var querey = req.body.text;
 	console.log("searching db for: " + querey);
-	var resRank = 0;
+	//var resRank = 0;
 	//	mongo text search stuff should go here
 	courseModel.find({$text: {$search: querey}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).exec(function(err,searchResults){
 		if(err){
